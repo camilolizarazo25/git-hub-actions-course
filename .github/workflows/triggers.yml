@@ -14,8 +14,6 @@ jobs:
         run: echo "USERNAME=${{ github.actor }}" >> $GITHUB_ENV
       - name: Correr script
         run: python hola_mundo.py
-
-run-name: actividad 2.2.
 on: pull_request
 jobs:
   hola-mundo:
@@ -27,8 +25,6 @@ jobs:
         run: echo "USERNAME=${{ github.actor }}" >> $GITHUB_ENV
       - name: Correr script
         run: python hola_mundo_pull_req.py
-
-run-name: actividad 2.3.
 on: schedule
   - cron '15 30 * * *'
 jobs:
