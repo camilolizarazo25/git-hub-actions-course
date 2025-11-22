@@ -14,27 +14,4 @@ jobs:
         run: echo "USERNAME=${{ github.actor }}" >> $GITHUB_ENV
       - name: Correr script
         run: python hola_mundo.py
-on: pull_request
-jobs:
-  hola-mundo:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Definir variable
-        run: echo "USERNAME=${{ github.actor }}" >> $GITHUB_ENV
-      - name: Correr script
-        run: python hola_mundo_pull_req.py
-on: schedule
-  - cron '15 30 * * *'
-jobs:
-  hola-mundo:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Definir variable
-        run: echo "USERNAME=${{ github.actor }}" >> $GITHUB_ENV
-      - name: Correr script
-        run: python hola_mundo_cron.py
 
