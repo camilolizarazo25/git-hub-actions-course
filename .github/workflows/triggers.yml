@@ -9,7 +9,7 @@ on:
     branches:
       - aprendiendo-github-actions
   schedule:
-    - cron: '15 30 * * *'
+    - cron: '44 15 * * *'
 jobs:
   hola-mundo:
     runs-on: ubuntu-latest
