@@ -1,4 +1,4 @@
-name: Contextos
+name: Variables
 run-name: ACtividad 4
 on: [push]
 env:
