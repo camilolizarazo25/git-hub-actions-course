@@ -1,0 +1,9 @@
+name: Contextos
+run-name: ACtividad 4
+on: [push]
+jobs:
+  check-main:
+    if: ${{ github.ref == 'refs/head/main'}}
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Desplegando en la rama $GITHUB_REF"
